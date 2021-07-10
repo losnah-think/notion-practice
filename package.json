@@ -1,25 +1,17 @@
 {
-  "name": "notion-practice",
-  "version": "0.1.0",
-  "description": "\"노션 API 연습\"",
-  "main": "index.js",
-  "dependencies": {
-    "@notionhq/client": "^0.2.0",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "package-lock.json": "^1.0.0"
-  },
+  "name": "practice",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/losnah-think/notion-practice.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/losnah-think/notion-practice/issues"
-  },
-  "homepage": "https://github.com/losnah-think/notion-practice#readme"
+  "dependencies": {
+    "@notionhq/client": "^0.2.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
 }

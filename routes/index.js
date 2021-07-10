@@ -1,8 +1,12 @@
-const { Client } = require("@notionhq/client")
+const Client = require("@notionhq/client");
 require("dotenv").config();
 
-const notion = new Client({ auth: process.env.NOTION_TOKEN })
+const notion = new Client({ auth: process.env.NOTION_KEY })
 const databaseId = process.env.NOTION_DATABASE_ID
+
+
+var express = require('express');
+var router = express.Router();
 
 async function addItem(text) {
   try {
@@ -31,3 +35,5 @@ async function addItem(text) {
 }
 
 addItem("Yurts in Big Sur, California")
+
+module.exports = router;
